@@ -33,7 +33,7 @@ def list_users_with_roles(exclude_domain):
         data.append([user_principal_name, manager, usage_location, user_enabled])
 
     return data
-
+ 
 def save_to_csv(data):
     with open("users_with_roles.csv", "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
